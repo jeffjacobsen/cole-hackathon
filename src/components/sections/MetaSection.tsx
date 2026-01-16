@@ -126,19 +126,12 @@ export default function MetaSection() {
             The YokeFlow Dashboard
           </h3>
           <div className="glass rounded-xl p-6 lg:p-8 hover:glass-strong transition-all duration-300">
-            <div className="aspect-video rounded-lg overflow-hidden border-2 border-primary-500/30 bg-dark-900 flex items-center justify-center">
-              {/* Placeholder for YokeFlow screenshot */}
-              <div className="text-center p-8">
-                <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-primary glow-primary mb-4">
-                  <Rocket className="w-10 h-10 text-white" />
-                </div>
-                <p className="text-dark-400 text-sm">
-                  [Add yokeflow-screenshot.png to /public folder]
-                </p>
-                <p className="text-dark-500 text-xs mt-2">
-                  Screenshot showing: 6/14 epics • 31/62 tasks • Session 5 completed
-                </p>
-              </div>
+            <div className="aspect-video rounded-lg overflow-hidden border-2 border-primary-500/30 bg-dark-900">
+              <img
+                src="/yokeflow-screenshot.png"
+                alt="YokeFlow dashboard showing project progress: 6/14 epics completed, 31/62 tasks completed, 31/62 tests passing"
+                className="w-full h-full object-contain"
+              />
             </div>
             <p className="text-center text-dark-400 text-sm mt-4">
               <strong className="text-white">Real-time progress tracking:</strong> 6 epics completed, 31 tasks implemented, all with passing browser tests
