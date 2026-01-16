@@ -3,6 +3,7 @@ import Hero from './components/sections/Hero'
 import ToolsSection from './components/sections/ToolsSection'
 import DesignSection from './components/sections/DesignSection'
 import StrategySection from './components/sections/StrategySection'
+import MetaSection from './components/sections/MetaSection'
 
 // Section components (to be built)
 // import Navigation from './components/Navigation'
@@ -26,6 +27,9 @@ function App() {
 
         {/* Strategy Section */}
         <StrategySection />
+
+        {/* Meta Section */}
+        <MetaSection />
       </main>
 
       {/* Footer */}
