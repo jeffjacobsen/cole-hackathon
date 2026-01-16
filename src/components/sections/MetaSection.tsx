@@ -131,6 +131,7 @@ export default function MetaSection() {
                 src="/yokeflow-screenshot.png"
                 alt="YokeFlow dashboard showing project progress: 6/14 epics completed, 31/62 tasks completed, 31/62 tests passing"
                 className="w-full h-full object-contain"
+                loading="lazy"
               />
             </div>
             <p className="text-center text-dark-400 text-sm mt-4">

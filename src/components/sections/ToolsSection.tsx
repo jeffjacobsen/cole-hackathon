@@ -131,21 +131,21 @@ export default function ToolsSection() {
 
       <div className="container-custom relative z-10">
         {/* Section Title */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 px-4">
             <span className="text-gradient">The Tools</span>
           </h2>
-          <p className="text-lg text-dark-300 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-dark-300 max-w-2xl mx-auto px-4">
             Modern AI-powered development stack that enables rapid, high-quality frontend creation
           </p>
         </div>
 
         {/* AI Tools Subsection */}
-        <div className="mb-16">
-          <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center">
+        <div className="mb-12 sm:mb-14 md:mb-16">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6 sm:mb-8 text-center px-4">
             <span className="text-white">AI Agents & Integrations</span>
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             {aiTools.map((tool, index) => (
               <ToolCard
                 key={index}
@@ -161,10 +161,10 @@ export default function ToolsSection() {
 
         {/* Development Stack Subsection */}
         <div>
-          <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6 sm:mb-8 text-center px-4">
             <span className="text-white">Development Stack</span>
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             {devStack.map((tool, index) => (
               <ToolCard
                 key={index}

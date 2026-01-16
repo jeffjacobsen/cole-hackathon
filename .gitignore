@@ -36,3 +36,4 @@ Thumbs.db
 
 # Task manager database (local development)
 # tasks.db
+.vercel

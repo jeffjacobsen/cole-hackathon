@@ -46,11 +46,13 @@ export default function Hero() {
         />
 
         {/* Floating orbs */}
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary-500/10 rounded-full blur-3xl glow-primary animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent-500/10 rounded-full blur-3xl glow-accent"
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary-500/10 rounded-full blur-3xl glow-primary animate-float-slow animate-pulse-glow" />
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent-500/10 rounded-full blur-3xl glow-accent animate-float-reverse"
           style={{ animationDelay: '2s' }}
         />
-        <div className="absolute top-1/2 right-1/3 w-48 h-48 bg-primary-400/5 rounded-full blur-2xl" />
+        <div className="absolute top-1/2 right-1/3 w-48 h-48 bg-primary-400/5 rounded-full blur-2xl animate-float"
+          style={{ animationDelay: '1s' }}
+        />
 
         {/* Animated grid lines */}
         <svg
@@ -71,22 +73,22 @@ export default function Hero() {
         </svg>
       </div>
 
-      <div className="container-custom text-center relative z-10">
+      <div className="container-custom text-center relative z-10 px-4 sm:px-6">
         {/* Main Headline - Self-referential meta message */}
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight">
           <span className="text-gradient-animated">Built by AI.</span>
           <br />
           <span className="text-white">You're looking at it.</span>
         </h1>
 
         {/* Subheadline - Explaining the concept */}
-        <p className="text-lg md:text-xl text-dark-300 max-w-2xl mx-auto mb-8">
+        <p className="text-base sm:text-lg md:text-xl text-dark-300 max-w-2xl mx-auto mb-6 sm:mb-8 leading-relaxed px-2">
           A meta landing page that showcases how to build beautiful frontends
           with AI coding agents. The page itself is proof of the process.
         </p>
 
         {/* Tech stack badges */}
-        <div className="flex flex-wrap justify-center gap-3 mb-12">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 sm:mb-12 px-2">
           <TechBadge icon={ReactIcon} label="React" />
           <TechBadge icon={ViteIcon} label="Vite" />
           <TechBadge icon={TypeScriptIcon} label="TypeScript" />
@@ -97,7 +99,7 @@ export default function Hero() {
         {/* Call-to-action button to scroll down */}
         <button
           onClick={scrollToNextSection}
-          className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-primary text-white rounded-lg font-medium hover:glow-primary transition-all duration-300 focus-ring"
+          className="inline-flex items-center gap-2 px-6 py-3 sm:px-8 sm:py-4 bg-gradient-primary text-white rounded-lg font-medium hover:glow-primary transition-all duration-300 focus-ring min-h-[44px] text-sm sm:text-base"
           aria-label="Scroll to next section"
         >
           Explore How It Works
