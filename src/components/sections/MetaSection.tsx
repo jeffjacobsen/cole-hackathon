@@ -1,4 +1,4 @@
-import { Rocket, Zap, CheckCircle, GitBranch, Layers, Clock } from 'lucide-react'
+import { Rocket, Zap, CheckCircle, GitBranch, Layers, Clock, Github, FileText } from 'lucide-react'
 
 export default function MetaSection() {
   return (
@@ -20,7 +20,7 @@ export default function MetaSection() {
             <span className="text-gradient">The Meta Reveal</span>
           </h2>
           <p className="text-lg text-dark-300 max-w-3xl mx-auto">
-            This landing page was built using <strong className="text-white">YokeFlow</strong>, an autonomous AI development platform that orchestrates Claude to build complete applications
+            This landing page was built using <a href="https://github.com/jeffjacobsen/yokeflow2" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gradient transition-colors underline decoration-primary-500/50 hover:decoration-primary-500"><strong>YokeFlow</strong></a>, an autonomous AI development platform that orchestrates Claude to build complete applications
           </p>
         </div>
 
@@ -31,14 +31,34 @@ export default function MetaSection() {
               <Rocket className="w-8 h-8 text-white" />
             </div>
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-              From Spec to Production in One Go
+              From Spec to Production—Fully Autonomous
             </h3>
             <p className="text-lg text-dark-300 leading-relaxed mb-6">
-              I provided Cole's hackathon challenge README to YokeFlow and let it handle the rest. The system autonomously planned 14 epics, broke them into 62 tasks, and began implementing—complete with browser-based verification for every feature.
+              I provided <a href="/hackathon.md" target="_blank" rel="noopener noreferrer" className="text-primary-300 hover:text-primary-200 underline decoration-primary-500/30 hover:decoration-primary-500 transition-colors">Cole's hackathon challenge README</a> to YokeFlow and let it handle the rest. The system autonomously planned 14 epics, broke them into 62 tasks, and implemented everything—complete with browser-based verification for every feature.
             </p>
-            <p className="text-base text-dark-400 leading-relaxed">
-              Due to the hackathon time constraint, YokeFlow completed <strong className="text-primary-300">6 of 14 epics</strong> (31 of 62 tasks) before I stopped it. This final "Meta Reveal" section was added manually to explain the process.
+            <p className="text-base text-dark-400 leading-relaxed mb-6">
+              YokeFlow completed all 14 epics and 62 tasks autonomously. Every component, animation, and section you see was generated, styled, and verified by AI agents working across multiple sessions.
             </p>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <a
+                href="https://github.com/jeffjacobsen/cole-hackathon"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-primary text-white rounded-lg font-medium hover:glow-primary transition-all duration-300 focus-ring"
+              >
+                <Github className="w-5 h-5" />
+                View on GitHub
+              </a>
+              <a
+                href="/hackathon.md"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 glass text-white rounded-lg font-medium hover:glass-strong transition-all duration-300 focus-ring"
+              >
+                <FileText className="w-5 h-5" />
+                View Original Spec
+              </a>
+            </div>
           </div>
         </div>
 
@@ -63,16 +83,16 @@ export default function MetaSection() {
                     Opus 4 analyzed the hackathon spec and created a complete roadmap with 14 epics and 62 tasks.
                   </p>
                   <div className="text-xs text-dark-400 space-y-1">
-                    <div>• Read requirements</div>
-                    <div>• Designed architecture</div>
-                    <div>• Created task breakdown</div>
-                    <div>• Generated test cases</div>
+                    <div>• Read requirements from README</div>
+                    <div>• Designed complete architecture</div>
+                    <div>• Created detailed task breakdown</div>
+                    <div>• Generated verification test cases</div>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Sessions 1-5: Autonomous Coding */}
+            {/* Sessions 1-10+: Autonomous Coding */}
             <div className="glass rounded-xl p-6 hover:glass-strong transition-all duration-300 group">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 p-3 rounded-lg bg-gradient-accent glow-accent">
@@ -80,16 +100,16 @@ export default function MetaSection() {
                 </div>
                 <div className="flex-1">
                   <h4 className="text-xl font-bold text-white mb-3 group-hover:text-gradient transition-colors duration-300">
-                    Sessions 1-5: Coding
+                    Sessions 1-10+: Autonomous Implementation
                   </h4>
                   <p className="text-dark-300 text-sm mb-3 leading-relaxed">
-                    Sonnet 4.5 implemented features autonomously, building components section by section.
+                    Sonnet 4.5 implemented all 62 tasks across multiple sessions, building every component, animation, and interaction.
                   </p>
                   <div className="text-xs text-dark-400 space-y-1">
-                    <div>• Hero section with animations</div>
-                    <div>• Tools section (9 cards)</div>
-                    <div>• Design prompting guide</div>
-                    <div>• Strategy & process sections</div>
+                    <div>• All 5 main sections (Hero, Tools, Design, Strategy, Meta)</div>
+                    <div>• Navigation & Footer components</div>
+                    <div>• 10+ reusable UI components</div>
+                    <div>• Animations, transitions & interactions</div>
                   </div>
                 </div>
               </div>
@@ -213,24 +233,24 @@ export default function MetaSection() {
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <div className="text-center">
-                <div className="text-4xl font-bold text-gradient mb-2">6</div>
-                <div className="text-sm text-dark-400">Coding Sessions</div>
+                <div className="text-4xl font-bold text-gradient mb-2">14</div>
+                <div className="text-sm text-dark-400">Epics Completed</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-gradient mb-2">31</div>
+                <div className="text-4xl font-bold text-gradient mb-2">62</div>
                 <div className="text-sm text-dark-400">Tasks Completed</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-gradient mb-2">15</div>
+                <div className="text-4xl font-bold text-gradient mb-2">19</div>
                 <div className="text-sm text-dark-400">Components Built</div>
               </div>
               <div className="text-center">
                 <div className="text-4xl font-bold text-gradient mb-2">100%</div>
-                <div className="text-sm text-dark-400">Tests Passing</div>
+                <div className="text-sm text-dark-400">Autonomous</div>
               </div>
             </div>
             <p className="text-center text-dark-400 text-sm mt-6 leading-relaxed">
-              All of this from a single README file input. No manual coding until this final section.
+              From a single README file to production-ready app. Fully autonomous—no manual coding required.
             </p>
           </div>
         </div>

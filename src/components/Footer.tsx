@@ -31,7 +31,7 @@ export default function Footer() {
             <h3 className="text-sm font-semibold text-dark-300 mb-3">Resources</h3>
             <div className="flex flex-col gap-2 items-center md:items-end">
               <a
-                href="https://github.com"
+                href="https://github.com/jeffjacobsen/cole-hackathon"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm text-dark-400 hover:text-primary-400 transition-colors focus-ring rounded px-2 py-1"
